@@ -1,7 +1,7 @@
 # Custom Proc-Based Linux Device Driver
 
 ## Overview
-This project implements a Linux kernel module that creates a `/proc/my_driver` entry with read and write capabilities. This module demonstrates basic user-kernel communication by allowing messages to be sent from user space to kernel space and back.
+This project implements a Linux kernel module that creates a `/proc/my_driver` entry with read and write capabilities. This module demonstrates user-kernel communication by allowing messages to be sent from user space to kernel space and back.
 
 
 ## Features
