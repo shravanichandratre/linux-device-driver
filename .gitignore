@@ -1,0 +1,15 @@
+.ldd.ko.cmd
+.ldd.mod.cmd
+.ldd.mod.o.cmd
+.ldd.o.cmd
+.Module.symvers.cmd
+.modules.order.cmd
+
+ldd.ko
+ldd.mod
+ldd.mod.c
+ldd.mod.o
+ldd.o
+
+Module.symvers
+modules.order
