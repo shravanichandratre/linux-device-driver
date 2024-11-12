@@ -10,9 +10,12 @@ This project implements a Linux kernel module that creates a `/proc/my_driver` e
 
 
 ## Project Structure
-- **ldd.c**: Kernel module code for creating a proc file with read and write capabilities.
-- **user-app.py**: User-space application to communicate with the kernel module by writing to and reading from `/proc/my_driver`.
-- **Makefile**: Build file to compile and load the kernel module.
+| File         | Description                                                        |
+|--------------|--------------------------------------------------------------------|
+| `ldd.c`      | Kernel module code implementing read and write functionality in proc files. |
+| `user-app.py`| User-space application to interact with the proc file for reading and writing data. |
+| `Makefile`   | Build instructions to compile and load the kernel module.          |
+
 
 
 ## Instructions
@@ -42,6 +45,7 @@ Received from kernel space: Hello from user space!
 
 
 ## Output with dmesg
+```bash
 my_init: Entry
 my_init: Exit
 my_write
@@ -49,4 +53,5 @@ Data received from user space: Hello from user space!
 
 my_read
 my_exit: Entry
-my_exit: Exit 
+my_exit: Exit
+```
